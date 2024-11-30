@@ -39,19 +39,19 @@ pipeline {
             }
         }
 
-        // stage('Plan') {
-        //     when{
-        //         expression{
-        //             params.Create
-        //         }
-        //     }
-        //     steps {
-        //         sh """
-        //             cd terraform
-        //             terraform plan -var-file=${params.environment}/${params.environment}.tfvars -var="app_version=${params.version}"
-        //         """
-        //     }
-        // }
+        stage('Plan') {
+            // when{
+            //     expression{
+            //         params.Create
+            //     }
+            // }
+            steps {
+                sh """
+                    cd terraform
+                    terraform plan -var-file=${params.environment}/${params.environment}.tfvars -var="app_version=${params.version}"
+                """
+            }
+        }
 
         // stage('Apply') {
         //     when{
