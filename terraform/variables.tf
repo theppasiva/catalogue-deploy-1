@@ -20,11 +20,11 @@ variable "environment" {
 }
 
 variable "zone_name" {
-  default = "shivarampractise.online"
+  default = "sivapractice.online"
 }
 variable "app_version" {
   
 }
 variable "iam_instance_profile" {
-  default = "Ec2roleForShellSript"
+  default = "Ec2RoleForShellScript"
 }

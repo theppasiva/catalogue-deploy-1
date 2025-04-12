@@ -1,4 +1,4 @@
-bucket = "shivaram-practice-state-prod"
+bucket = "sivaram-practice-state-prod"
 key    = "catalogue"
 region = "us-east-1"
-dynamodb_table = "shivaram-practice-locking-prod"
+dynamodb_table = "sivaram-practice-locking-prod"
